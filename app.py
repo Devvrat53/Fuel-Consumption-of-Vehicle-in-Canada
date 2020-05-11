@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("../Data//MY2019 Fuel Consumption Ratings.csv")
+df = pd.read_csv("Data/MY2019 Fuel Consumption Ratings.csv")
 
 # Label Encoding
 le_make = LabelEncoder()
@@ -48,4 +48,4 @@ def predict():
     return render_template('index.html', prediction_text='CO2 Emission: {}'.format(output))
 
 if __name__ == 'main':
-    app.run(debug=True)
+    app.run(debug=False)

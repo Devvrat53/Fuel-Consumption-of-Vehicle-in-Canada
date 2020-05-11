@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import pickle
 
 # import dataset
-df = pd.read_csv("../Data/MY2019 Fuel Consumption Ratings.csv")
+df = pd.read_csv("Data/MY2019 Fuel Consumption Ratings.csv")
 
 # Label Encoding
 le_make = LabelEncoder()
